@@ -6,3 +6,6 @@ const user = {
 }
 
 console.log(`Hallo nama saya ${user.name} umur saya ${user.age} hobi saya ${user.Hobi}`)
+
+user["age"] = 17;
+console.log(user.age)
