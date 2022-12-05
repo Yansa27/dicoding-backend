@@ -1,6 +1,4 @@
-let i = 1;
+let name = "hello"
+let name2 = "js"
 
-while (i <= 100) {
-    console.log(i)
-    i++;
-}
+console.log(name + name2)
