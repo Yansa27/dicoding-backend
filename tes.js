@@ -1,4 +1,7 @@
-let name = "hello"
-let name2 = "js"
+function multiply(num) {
+    total = num * num;
+}
 
-console.log(name + name2)
+const result = multiply(3);
+
+console.log(result);
