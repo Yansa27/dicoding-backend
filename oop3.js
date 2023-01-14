@@ -1,16 +1,26 @@
-class car  {
+class Car  {
     constructor (brand , color , maxSpeed) {
         this.brand = brand;
         this.color = color;
         this.maxSpeed = maxSpeed;
 
-        this.chassisNumber = `${brand}-${Math.floor(Math.random () * 1000) + 1}`
+        this._chassisNumber = `${brand}-${Math.floor(Math.random () * 1000)}`
     }  
+
+    get chassisNumber() {
+        return this._chassisNumber;
+      }
+     
+      set chassisNumber(chassisNumber) {
+        console.log('you are not allowed to change the chassis number');
+      }
 }
 
-const car1 = new car ("honda" , "red" , 300);
+const car = new Car('BMW', 'red', 200);
+console.log(car.chassisNumber);
+car.chassisNumber = 'BMW-1';
+console.log(car.chassisNumber);
 
-console.log (car1);
 
 // user
 
