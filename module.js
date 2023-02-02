@@ -6,4 +6,4 @@ const coffeeStock = {
     liberica: 200
 };
  
-export default coffeeStock;
+export default coffeeStock;  

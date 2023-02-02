@@ -3,7 +3,7 @@
 // console.log(coffeeStock);
 // console.log(isCoffeeMachineReady);
 
-import coffeeStock from './state.js';
+import coffeeStock from "./module";
  
 const displayStock = stock => {
     for (const type in stock) {
