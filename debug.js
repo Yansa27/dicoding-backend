@@ -27,14 +27,15 @@
 
 
 // ! Throwing Errors
-let json = '{"name" : "Yoda", "age" : 20';
+let json ='{"age": 20 }';
 
 try {
     let user = JSON.parse(json);
-
+    if (!user.name){
+        throw new SyntaxError("'name' is not required");
+    }
     console.log(user.name);
     console.log(user.age);
 } catch (error) {
-    console.log(error.name);
-    console.log(error.message);
+    console.log(`JSON error : ${error.message}`);
 }
