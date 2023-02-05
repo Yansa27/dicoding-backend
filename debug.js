@@ -37,5 +37,12 @@ try {
     console.log(user.name);
     console.log(user.age);
 } catch (error) {
+   if (error instanceof SyntaxError) {
     console.log(`JSON error : ${error.message}`);
+   } else if (error instanceof ReferenceError) {
+    console.log(eror.message);
+   }else {
+    console.log(error.stack);
+   }
+// ! Dengan operator instanceOf, kita bisa mendapatkan tipe dari eror yang terjadi. Dari sana kita bisa membuat percabangan bagaimana cara menangani erornya.
 }
