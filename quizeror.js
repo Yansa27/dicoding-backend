@@ -61,4 +61,6 @@ const detectTriangle = (a, b, c) => {
   
     return 'Segitiga sembarang';
   };
+
+  
   
